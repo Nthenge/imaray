@@ -3,13 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.id === params.id);
+// ✅ Updated function to handle Promise for params
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { id } = await params; // Await the promise
+  const project = projects.find((p) => p.id === id);
 
   if (!project) {
     return (
