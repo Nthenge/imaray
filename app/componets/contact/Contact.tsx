@@ -29,11 +29,11 @@ export default function ContactSection() {
         {/* LEFT SIDE CONTENT */}
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
-            Let’s Connect
+            Let&apos;s Connect
           </h1>
           <div className="w-20 h-1 bg-[#EFA48B] rounded-full"></div>
           <p className="opacity-90 leading-relaxed">
-            I’d love to hear about your goals, ideas, or vision — let’s turn
+            I&apos;d love to hear about your goals, ideas, or vision — let’s turn
             great conversations into meaningful results.
           </p>
 
@@ -41,13 +41,13 @@ export default function ContactSection() {
             <h4 className="text-xl font-semibold">Excellence You Can Rely On</h4>
             <p className="opacity-85">
               Have a goal? I have the tools and experience to help you reach it.
-              Let’s connect and turn your ideas into impact.
+              Let&apos;s connect and turn your ideas into impact.
             </p>
             <h3 className="text-lg font-medium mt-4">What will be the next step?</h3>
             <ul className="list-disc list-inside space-y-1 text-sm opacity-90">
-              <li>We'll prepare the proposal.</li>
-              <li>We'll discuss it together.</li>
-              <li>Let's start the discussion.</li>
+              <li>We&apos;ll prepare the proposal.</li>
+              <li>We&apos;ll discuss it together.</li>
+              <li>Let&apos;s start the discussion.</li>
             </ul>
           </div>
         </div>
