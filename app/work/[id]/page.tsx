@@ -1,8 +1,14 @@
+import { projects } from "../../componets/data/work";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "../../componets/data/work";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+interface ProjectPageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects.find((p) => p.id === params.id);
 
   if (!project) {
@@ -33,12 +39,10 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
           className="rounded-lg shadow-lg object-cover"
         />
 
-        {/* Descriptions */}
-        <p className="text-lg opacity-90 whitespace-pre-line">
-          {project.descriptions}
-        </p>
+        {/* Description */}
+        <p className="text-lg opacity-90">{project.descriptions}</p>
 
-        {/* External Link (if available) */}
+        {/* External Link */}
         {project.link && (
           <a
             href={project.link}
