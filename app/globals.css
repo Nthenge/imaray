@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #748d92;
+  --background-gradient: linear-gradient(to bottom right, #748d92, #4a5e65);
+  --foreground: #171717;
+  --background-secondary: #D3D9D4;
+  --accent: #EFA48B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --background-secondary: #171717;
+  }
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, var(--background), var(--background-secondary));
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+html, body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,107 @@
+"use client";
+import { useState } from "react";
+
+export default function ContactSection() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Connect to API or email service here
+  };
+
+  return (
+    <section
+      id="contact"
+      className="min-h-screen flex items-center justify-center px-6 md:px-12 bg-[var(--background-gradient)] text-white overflow-hidden w-full"
+    >
+      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center overflow-hidden">
+        
+        {/* LEFT SIDE CONTENT */}
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
+            Let’s Connect
+          </h1>
+          <div className="w-20 h-1 bg-[#EFA48B] rounded-full"></div>
+          <p className="opacity-90 leading-relaxed">
+            I’d love to hear about your goals, ideas, or vision — let’s turn
+            great conversations into meaningful results.
+          </p>
+
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg space-y-4">
+            <h4 className="text-xl font-semibold">Excellence You Can Rely On</h4>
+            <p className="opacity-85">
+              Have a goal? I have the tools and experience to help you reach it.
+              Let’s connect and turn your ideas into impact.
+            </p>
+            <h3 className="text-lg font-medium mt-4">What will be the next step?</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm opacity-90">
+              <li>We'll prepare the proposal.</li>
+              <li>We'll discuss it together.</li>
+              <li>Let's start the discussion.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE FORM */}
+        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-8">
+          <h6 className="mb-6 text-lg font-medium text-[#EFA48B]">
+            Be as detailed as you can
+          </h6>
+          <form onSubmit={handleSubmit} className="space-y-4 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows={6}
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/20 placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-[#EFA48B] transition"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full py-3 bg-[#EFA48B] hover:bg-[#e88c6f] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
+            >
+              Submit 📩
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  );
+}
