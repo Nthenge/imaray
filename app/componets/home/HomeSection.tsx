@@ -75,8 +75,8 @@ const HomeSection = () => {
           <Image
             src="/images/arts/sylvia.jpg"
             alt="video illustration"
-            width={350}
-            height={350}
+            width={300}
+            height={300}
             quality={100}
             priority
             className="rounded-lg shadow-lg object-cover"
