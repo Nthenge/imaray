@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Navbar from "@/app/navigation/Navbar";
 import HomeSection from "./componets/home/HomeSection";
 import ServicesSection from "./componets/services/Services";
@@ -6,17 +8,31 @@ import FaqSection from "./componets/faq/Faq";
 import ContactSection from "./componets/contact/Contact";
 import FooterSection from "./componets/footer/Footer";
 import WorkSection from "./work/worksectin";
+
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <main>
-      <Navbar />
-      <HomeSection />
-      <ServicesSection />
-      <WorkSection />
-      <TestimonialsSection />
-      <FaqSection />
-      <ContactSection />
-      <FooterSection/>
-    </main>
+    <div className="relative">
+      {/* Navbar */}
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+
+      {/* Page content that shifts & gets shadow when menu opens */}
+      <div
+        className={`transition-transform duration-300 ease-in-out relative z-20 ${
+          isOpen
+            ? "translate-x-2/3 scale-[0.98] shadow-[rgba(0,0,0,0.5)_-10px_0_30px]"
+            : "translate-x-0 scale-100 shadow-none"
+        }`}
+      >
+        <HomeSection />
+        <ServicesSection />
+        <WorkSection />
+        <TestimonialsSection />
+        <FaqSection />
+        <ContactSection />
+        <FooterSection />
+      </div>
+    </div>
   );
 }
