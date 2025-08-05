@@ -50,7 +50,7 @@ const Navbar = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open: bool
       {/* Mobile Menu */}
       <div
         className={`fixed top-0 left-0 h-full w-2/3 
-          bg-transparent text-white transform transition-transform duration-300 z-50 ${
+          bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white transform transition-transform duration-300 z-50 ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
