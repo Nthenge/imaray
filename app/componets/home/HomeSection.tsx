@@ -47,10 +47,13 @@ const HomeSection = () => {
             
             {/* Tools in two lines */}
             <p className="leading-relaxed">
-              Airtable • Asana • Wixsite • Canva
+              Airtable • Asana • Wixsite • Canva • Slack • Click-Up • Notion
             </p>
             <p className="leading-relaxed">
-              Trello • Google Workspace • HubSpot
+              Convert Kit • Trello • Mailchimp • Online survey tools 
+            </p>
+            <p className="leading-relaxed">
+              Google Analytics • Google Meet • Google Workspace • Salesforce
             </p>
           </div>
 
