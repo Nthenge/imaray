@@ -12,7 +12,7 @@ const HomeSection = () => {
         
         {/* INTRO CONTENT */}
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-25 md:pt-0">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-30 md:pt-0">
             <span className="block">I&apos;m Sylvia</span>
             <span className="block text-lg md:text-xl font-light mt-2">
               Trained Virtual Assistant | HR & Admin Support | AI & Tech-Savvy | Remote Ready
