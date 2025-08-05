@@ -63,7 +63,7 @@ const HomeSection = () => {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-[#EFA48B] hover:bg-[#e78a6d] rounded-lg font-medium text-white transition duration-300"
             >
-              🌐 Web Development
+              🌐 Web Dev
             </Link>
         </div>
 
