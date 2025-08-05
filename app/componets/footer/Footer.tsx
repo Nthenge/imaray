@@ -26,22 +26,22 @@ export default function FooterSection() {
             <div className="w-12 h-1 bg-[#EFA48B] rounded-full my-3"></div>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-white hover:underline transition">
+                <a href="#services" className="hover:text-white hover:underline transition">
                   Virtual Assistant
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white hover:underline transition">
+                <a href="#services" className="hover:text-white hover:underline transition">
                   NGO & Community Advocacy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white hover:underline transition">
+                <a href="#services" className="hover:text-white hover:underline transition">
                   Human Resource
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white hover:underline transition">
+                <a href="#services" className="hover:text-white hover:underline transition">
                   Project Management
                 </a>
               </li>
@@ -55,7 +55,7 @@ export default function FooterSection() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://linkedin.com/in/Sylvia"
+                  href="https://www.linkedin.com/in/sylvia-mutinda"
                   target="_blank"
                   className="hover:text-white hover:underline transition"
                 >
