@@ -47,13 +47,16 @@ const HomeSection = () => {
             
             {/* Tools in two lines */}
             <p className="leading-relaxed">
+              Microsoft 365 • Google Analytics • Google Meet • Google Workspace 
+            </p>
+            <p className="leading-relaxed">
               Airtable • Asana • Wixsite • Canva • Slack • Click-Up • Notion
             </p>
             <p className="leading-relaxed">
-              Convert Kit • Trello • Mailchimp • Online survey tools 
+              Convert Kit • Trello • Mailchimp • Online survey tools • Pika
             </p>
             <p className="leading-relaxed">
-              Google Analytics • Google Meet • Google Workspace • Salesforce
+              Gemini • Zoom • DALL-E • Pika • Canva • Calendly • Miro
             </p>
           </div>
 
@@ -70,10 +73,12 @@ const HomeSection = () => {
         {/* IMAGE / VIDEO CONTENT */}
         <div className="relative flex justify-center">
           <Image
-            src="/images/arts/intro-section-illustration.png"
+            src="/images/arts/sylvia.jpg"
             alt="video illustration"
-            width={500}
+            width={350}
             height={350}
+            quality={100}
+            priority
             className="rounded-lg shadow-lg object-cover"
           />
         </div>
