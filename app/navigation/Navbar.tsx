@@ -13,7 +13,7 @@ const Navbar = () => {
           className="flex items-center space-x-2 px-3 py-1 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05),0_0_8px_#EFA48B] transition-all duration-300 hover:shadow-[inset_4px_4px_8px_rgba(0,0,0,0.25),_inset_-4px_-4px_8px_rgba(255,255,255,0.05),0_0_20px_#EFA48B]"
         >
           <Image
-            src="/images/sylvia.png"
+            src="/images/sylvia.jpg"
             alt="logo image"
             width={40}
             height={40}
