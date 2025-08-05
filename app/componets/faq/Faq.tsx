@@ -29,7 +29,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className="min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-[var(--background-gradient)] text-white"
+      className="min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
       {/* Heading */}
       <div className="text-center mb-12">

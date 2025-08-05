@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--background-gradient)] backdrop-blur-md shadow-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] backdrop-blur-md shadow-sm">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
         
         {/* Logo with constant surprise color + stronger hover glow */}

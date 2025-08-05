@@ -6,7 +6,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br bg-[var(--background-gradient)] text-white px-6 md:px-12"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 md:px-12"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
         
