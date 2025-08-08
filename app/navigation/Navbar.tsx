@@ -18,7 +18,7 @@ const Navbar = ({
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 px-3 py-1 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05),0_0_8px_#EFA48B]"
+            className="flex items-center space-x-2 px-3 py-1 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05),0_0_8px_#fff]"
           >
             <Image
               src="/images/sylvia.jpg"

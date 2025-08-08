@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           Testimonials
         </h1>
-        <div className="w-20 h-1 bg-[#EFA48B] mx-auto mt-4 rounded-full"></div>
+        <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
         <p className="mt-4 text-lg opacity-90">
           What my clients are saying...
         </p>
@@ -54,7 +54,7 @@ export default function TestimonialsSection() {
             <p className="text-base leading-relaxed italic mb-4">
               “{t.text}”
             </p>
-            <div className="text-[#EFA48B] text-lg mb-3">⭐⭐⭐⭐⭐</div>
+            <div className="text-[#008080] text-lg mb-3">⭐⭐⭐⭐⭐</div>
 
             <div className="flex items-center gap-4 mt-4">
               <Image

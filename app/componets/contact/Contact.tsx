@@ -31,7 +31,7 @@ export default function ContactSection() {
           <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
             Let&apos;s Connect
           </h1>
-          <div className="w-20 h-1 bg-[#EFA48B] rounded-full"></div>
+          <div className="w-20 h-1 bg-[#008080] rounded-full"></div>
           <p className="opacity-90 leading-relaxed">
             I&apos;d love to hear about your goals, ideas, or vision — let’s turn
             great conversations into meaningful results.
@@ -54,7 +54,7 @@ export default function ContactSection() {
 
         {/* RIGHT SIDE FORM */}
         <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-8">
-          <h6 className="mb-6 text-lg font-medium text-[#EFA48B]">
+          <h6 className="mb-6 text-lg font-medium text-[#008080]">
             Be as detailed as you can
           </h6>
           <form onSubmit={handleSubmit} className="space-y-4 w-full">
@@ -94,7 +94,7 @@ export default function ContactSection() {
             ></textarea>
             <button
               type="submit"
-              className="w-full py-3 bg-[#EFA48B] hover:bg-[#e88c6f] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
+              className="w-full py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
             >
               Submit 📩
             </button>

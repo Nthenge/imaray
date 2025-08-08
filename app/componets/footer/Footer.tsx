@@ -2,15 +2,15 @@ export default function FooterSection() {
   return (
     <footer
       id="footer"
-      className="w-full min-h-screen flex flex-col justify-between bg-gradient-to-br from-[#748D92] to-[#EFA48B] text-white py-12 px-6"
+      className="w-full min-h-screen flex flex-col justify-between bg-gradient-to-br from-[#748D92] to-[#008080] text-white py-12 px-6"
     >
       {/* Main Content */}
       <div className="flex-grow flex flex-col justify-center">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div>
-            <h5 className="text-3xl font-bold text-[#EFA48B]">Sylvia</h5>
-            <div className="w-16 h-1 bg-[#EFA48B] rounded-full my-3"></div>
+            <h5 className="text-3xl font-bold text-[#008080]">Sylvia</h5>
+            <div className="w-16 h-1 bg-[#008080] rounded-full my-3"></div>
             <p className="text-sm opacity-90 leading-relaxed">
               Versatile Virtual Assistant with 10+ years in admin, HR support,
               recruitment, scheduling, customer service, and digital content.
@@ -22,8 +22,8 @@ export default function FooterSection() {
 
           {/* Services */}
           <div>
-            <h5 className="text-2xl font-semibold text-[#EFA48B]">Services</h5>
-            <div className="w-12 h-1 bg-[#EFA48B] rounded-full my-3"></div>
+            <h5 className="text-2xl font-semibold text-[#008080]">Services</h5>
+            <div className="w-12 h-1 bg-[#008080] rounded-full my-3"></div>
             <ul className="space-y-3">
               <li>
                 <a href="#services" className="hover:text-white hover:underline transition">
@@ -50,8 +50,8 @@ export default function FooterSection() {
 
           {/* Useful Links */}
           <div>
-            <h5 className="text-2xl font-semibold text-[#EFA48B]">Useful Links</h5>
-            <div className="w-12 h-1 bg-[#EFA48B] rounded-full my-3"></div>
+            <h5 className="text-2xl font-semibold text-[#008080]">Useful Links</h5>
+            <div className="w-12 h-1 bg-[#008080] rounded-full my-3"></div>
             <ul className="space-y-3">
               <li>
                 <a

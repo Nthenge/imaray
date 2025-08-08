@@ -15,34 +15,17 @@ const HomeSection = () => {
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
             <span className="block">I&apos;m Sylvia</span>
             <span className="block text-lg md:text-xl font-light mt-2">
-              Trained Virtual Assistant | HR & Admin Support | AI & Tech-Savvy | Remote Ready
+              I am an Hr & Administration specialist. <br/>
+              Multi-skilled Virtual Assistant & Customer Relations Specialist. <br/>
+              I'm passionate about streamlining Processes & Productivity.
             </span>
           </h1>
-          
-          {/* BUTTONS */}
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="https://folll.io/Sylvia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#EFA48B] hover:bg-[#e78a6d] rounded-lg font-medium text-white transition duration-300"
-            >
-              Documentation <span className="ml-2">📄</span>
-            </Link>
-
-            <Link
-              href="#contact"
-              className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg font-medium text-white transition duration-300"
-            >
-              Get in Touch <span className="ml-2">→</span>
-            </Link>
-          </div>
 
           {/* TOOLS & APPS LIST */}
           <div className="mt-6 text-sm opacity-90">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-[#EFA48B]">🛠️</span>
-              <p className="font-semibold text-[#EFA48B]">Tools & Apps I Use:</p>
+              <span className="text-white">🛠️</span>
+              <p className="font-semibold text-[#008080]">Tools & Apps I Use:</p>
             </div>
             
             {/* Tools in two lines */}
@@ -60,13 +43,32 @@ const HomeSection = () => {
             </p>
           </div>
 
-          <Link
+          {/* BUTTONS */}
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="https://folll.io/Sylvia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg font-medium text-white transition duration-300"
+            >
+              <span className="ml-2">📄</span> Documentation 
+            </Link>
+
+            <Link
               href="https://beingsylvia.my.canva.site/onlineportfolio-sylviamwelu"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#EFA48B] hover:bg-[#e78a6d] rounded-lg font-medium text-white transition duration-300"
+              className="px-6 py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg font-medium text-white transition duration-300"
             >
               🌐 Web Dev
+            </Link>
+            
+          </div>
+            <Link
+              href="#contact"
+              className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg font-medium text-[#008080] transition duration-300"
+            >
+              Get in Touch <span className="ml-2">→</span>
             </Link>
         </div>
 

@@ -12,10 +12,10 @@ export default function WorkSection() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#EFA48B]">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#008080]">
             My Work
           </h1>
-          <div className="w-20 h-1 bg-[#EFA48B] mx-auto mt-3 rounded-full"></div>
+          <div className="w-20 h-1 bg-[#008080] mx-auto mt-3 rounded-full"></div>
         </div>
 
         {/* Projects Grid */}
@@ -34,7 +34,7 @@ export default function WorkSection() {
                 height={300}
                 className="rounded-lg shadow-md mb-4 object-cover h-60 w-full max-w-full"
               />
-              <h3 className="text-2xl font-semibold text-[#EFA48B] mb-3 group-hover:text-[#ef8f6f] transition">
+              <h3 className="text-2xl font-semibold text-[#008080] mb-3 group-hover:text-[#124E66] transition">
                 {project.title}
               </h3>
               <p className="text-sm opacity-90">{project.descriptions}</p>

@@ -32,7 +32,7 @@ export default function ServicesSection() {
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           My Services
         </h1>
-        <div className="w-20 h-1 bg-[#EFA48B] mx-auto mt-4 rounded-full"></div>
+        <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
       </div>
 
       {/* Description */}
@@ -54,7 +54,7 @@ export default function ServicesSection() {
           >
             <div>
               <div className="text-3xl">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-[#EFA48B] mt-2">
+              <h3 className="text-2xl font-bold text-[#008080] mt-2">
                 {service.title}
               </h3>
               <p className="text-lg leading-relaxed mt-2">{service.text}</p>

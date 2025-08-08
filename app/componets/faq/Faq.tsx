@@ -36,7 +36,7 @@ export default function FaqSection() {
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           FAQ
         </h1>
-        <div className="w-20 h-1 bg-[#EFA48B] mx-auto mt-4 rounded-full"></div>
+        <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
         <p className="mt-4 text-lg opacity-90">
           Frequently asked questions, get knowledge beforehand
         </p>
@@ -58,7 +58,7 @@ export default function FaqSection() {
                 {faq.question}
                 <span
                   className={`transform transition-transform duration-300 ${
-                    isOpen ? "rotate-45 text-[#EFA48B]" : "rotate-0"
+                    isOpen ? "rotate-45 text-[#008080]" : "rotate-0"
                   }`}
                 >
                   +
