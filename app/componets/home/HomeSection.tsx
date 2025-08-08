@@ -17,7 +17,7 @@ const HomeSection = () => {
             <span className="block text-lg md:text-xl font-light mt-2">
               I am an Hr & Administration specialist. <br/>
               Multi-skilled Virtual Assistant & Customer Relations Specialist. <br/>
-              I'm passionate about streamlining Processes & Productivity.
+              I&apos;m passionate about streamlining Processes & Productivity.
             </span>
           </h1>
 
