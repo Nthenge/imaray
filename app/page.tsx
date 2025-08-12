@@ -14,10 +14,8 @@ export default function Home() {
 
   return (
     <div className="relative">
-      {/* Navbar */}
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      {/* Page content that shifts & gets shadow when menu opens */}
       <div
         className={`transition-transform duration-300 ease-in-out relative z-20 ${
           isOpen
