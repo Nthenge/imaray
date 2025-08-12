@@ -31,7 +31,6 @@ export default function FaqSection() {
       id="faq"
       className="min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
-      {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           FAQ
@@ -65,7 +64,6 @@ export default function FaqSection() {
                 </span>
               </button>
 
-              {/* Animated Answer */}
               <div
                 className={`transition-all duration-500 ease-in-out ${
                   isOpen ? "max-h-96 opacity-100 py-4 px-6" : "max-h-0 opacity-0 px-6"

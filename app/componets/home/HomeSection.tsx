@@ -10,7 +10,6 @@ const HomeSection = () => {
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
         
-        {/* INTRO CONTENT */}
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
             <span className="block">I&apos;m Sylvia</span>
@@ -21,14 +20,12 @@ const HomeSection = () => {
             </span>
           </h1>
 
-          {/* TOOLS & APPS LIST */}
           <div className="mt-6 text-sm opacity-90">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-white">🛠️</span>
               <p className="font-semibold text-[#008080]">Tools & Apps I Use:</p>
             </div>
             
-            {/* Tools in two lines */}
             <p className="leading-relaxed">
               Microsoft 365 • Google Analytics • Google Meet • Google Workspace 
             </p>
@@ -43,7 +40,6 @@ const HomeSection = () => {
             </p>
           </div>
 
-          {/* BUTTONS */}
           <div className="flex flex-wrap gap-4">
             <Link
               href="https://folll.io/Sylvia"
@@ -72,7 +68,6 @@ const HomeSection = () => {
             </Link>
         </div>
 
-        {/* IMAGE / VIDEO CONTENT */}
         <div className="relative flex justify-center">
           <Image
             src="/images/arts/sylvia.jpg"

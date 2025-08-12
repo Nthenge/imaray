@@ -33,7 +33,6 @@ export default function TestimonialsSection() {
       id="testimonials"
       className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
-      {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           Testimonials
@@ -44,7 +43,6 @@ export default function TestimonialsSection() {
         </p>
       </div>
 
-      {/* Testimonials Grid */}
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {testimonials.map((t, i) => (
           <div

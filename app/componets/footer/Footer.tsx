@@ -4,10 +4,8 @@ export default function FooterSection() {
       id="footer"
       className="w-full min-h-screen flex flex-col justify-between bg-gradient-to-br from-[#748D92] to-[#008080] text-white py-12 px-6"
     >
-      {/* Main Content */}
       <div className="flex-grow flex flex-col justify-center">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
-          {/* Company Info */}
           <div>
             <h5 className="text-3xl font-bold text-[#008080]">Sylvia</h5>
             <div className="w-16 h-1 bg-[#008080] rounded-full my-3"></div>
@@ -20,7 +18,6 @@ export default function FooterSection() {
             </p>
           </div>
 
-          {/* Services */}
           <div>
             <h5 className="text-2xl font-semibold text-[#008080]">Services</h5>
             <div className="w-12 h-1 bg-[#008080] rounded-full my-3"></div>
@@ -68,7 +65,7 @@ export default function FooterSection() {
                   target="_blank"
                   className="hover:text-white hover:underline transition"
                 >
-                  Folllio
+                  Follio
                 </a>
               </li>
               <li>
@@ -84,7 +81,6 @@ export default function FooterSection() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-white/30 pt-6 text-center text-sm opacity-80">
         © {new Date().getFullYear()} Sylvia. All Rights Reserved.
       </div>

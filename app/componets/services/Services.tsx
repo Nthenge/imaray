@@ -27,7 +27,6 @@ export default function ServicesSection() {
       id="services"
       className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
-      {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           My Services
@@ -35,7 +34,6 @@ export default function ServicesSection() {
         <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
       </div>
 
-      {/* Description */}
       <div className="max-w-4xl mx-auto text-center space-y-6 mb-16 bg-white/5 backdrop-blur-md border border-white/20 shadow-md rounded-2xl p-8">
         <p className="text-lg leading-relaxed">
           My services range from virtual and administrative assistance to
@@ -45,7 +43,6 @@ export default function ServicesSection() {
         </p>
       </div>
 
-      {/* Services in two columns */}
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl w-full">
         {services.map((service, index) => (
           <div

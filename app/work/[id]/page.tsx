@@ -8,9 +8,8 @@ interface ProjectPageProps {
   }>;
 }
 
-// ✅ Updated function to handle Promise for params
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { id } = await params; // Await the promise
+  const { id } = await params;
   const project = projects.find((p) => p.id === id);
 
   if (!project) {
@@ -24,15 +23,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 py-12">
       <div className="max-w-5xl mx-auto space-y-8">
-        {/* Back button */}
         <Link href="/#work" className="text-[#EFA48B] hover:underline">
           ← Back to Work
         </Link>
 
-        {/* Title */}
         <h1 className="text-4xl font-bold text-[#EFA48B]">{project.title}</h1>
 
-        {/* Image */}
         <Image
           src={project.image}
           alt={project.title}
@@ -41,10 +37,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           className="rounded-lg shadow-lg object-cover"
         />
 
-        {/* Description */}
         <p className="text-lg opacity-90">{project.descriptions}</p>
 
-        {/* External Link */}
         {project.link && (
           <a
             href={project.link}

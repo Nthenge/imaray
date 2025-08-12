@@ -10,7 +10,6 @@ export default function WorkSection() {
       className="min-h-screen py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#008080]">
             My Work
@@ -18,7 +17,6 @@ export default function WorkSection() {
           <div className="w-20 h-1 bg-[#008080] mx-auto mt-3 rounded-full"></div>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project) => (
             <Link
