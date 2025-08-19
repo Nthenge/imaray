@@ -8,15 +8,45 @@ export default function ContactSection() {
     email: "",
     message: "",
   });
+  const [status, setStatus] = useState("")
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("Sending...");
+
+  try {
+    const res = await fetch('/.netlify/functions/sendForm', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (!res.ok) {
+      throw new Error(`HTTP error! Status: ${res.status}`);
+    }
+
+    const data = await res.json();
+    console.log("Server Response:", data);
+
+    setStatus("Sent ✅");
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: ""
+    });
+  } catch (err) {
+    console.error("Form submission error:", err);
+    setStatus("Not Sent ❌");
+  }
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Connect to API or email service here
   };
 
   return (
@@ -51,8 +81,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* RIGHT SIDE FORM */}
-        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-8">
+        <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-8" >
           <h6 className="mb-6 text-lg font-medium text-[#008080]">
             Be as detailed as you can
           </h6>
@@ -95,11 +124,10 @@ export default function ContactSection() {
               type="submit"
               className="w-full py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
             >
-              Submit 📩
+              {status && "Submit 📩"}
             </button>
           </form>
         </div>
-
       </div>
     </section>
   );

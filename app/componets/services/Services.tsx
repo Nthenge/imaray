@@ -27,6 +27,7 @@ export default function ServicesSection() {
       id="services"
       className="min-h-screen flex flex-col justify-center items-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
+      {/* Section Title */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           My Services
@@ -34,15 +35,40 @@ export default function ServicesSection() {
         <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto text-center space-y-6 mb-16 bg-white/5 backdrop-blur-md border border-white/20 shadow-md rounded-2xl p-8">
-        <p className="text-lg leading-relaxed">
-          My services range from virtual and administrative assistance to
-          creative and strategic support for individuals, entrepreneurs, and
-          businesses. I specialize in streamlining workflows, managing projects,
-          and handling day-to-day operations with precision and care.
-        </p>
+      {/* Intro + Tools in two columns */}
+      <div className="max-w-5xl mx-auto mb-16 bg-white/5 backdrop-blur-md border border-white/20 shadow-md rounded-2xl p-8">
+        <div className="flex flex-col md:flex-row gap-8">
+
+          {/* Intro - right */}
+          <div className="flex-1 text-center md:text-left space-y-6">
+            <p className="text-lg leading-relaxed">
+              My services range from virtual and administrative assistance to
+              creative and strategic support for individuals, entrepreneurs, and
+              businesses. I specialize in streamlining workflows, managing projects,
+              and handling day-to-day operations with precision and care.
+            </p>
+          </div>
+
+          {/* Divider (only visible on md+) */}
+          <div className="hidden md:block w-px bg-white/20"></div>
+
+          {/* Tools - left */}
+          <div className="flex-1 text-sm opacity-90">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-white text-lg">🛠️</span>
+              <p className="font-semibold text-[#008080]">Tools & Apps I Use:</p>
+            </div>
+            <div className="space-y-2 text-white/90 leading-relaxed">
+              <p>Microsoft 365 • Google Analytics • Google Meet • Google Workspace</p>
+              <p>Airtable • Asana • Wixsite • Canva • Slack • Click-Up • Notion</p>
+              <p>Convert Kit • Trello • Mailchimp • Online survey tools • Pika</p>
+              <p>Gemini • Zoom • DALL-E • Pika • Canva • Calendly • Miro</p>
+            </div>
+          </div>
+        </div>
       </div>
 
+      {/* Services Grid */}
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl w-full">
         {services.map((service, index) => (
           <div

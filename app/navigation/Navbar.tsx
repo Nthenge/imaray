@@ -31,11 +31,11 @@ const Navbar = ({
           </Link>
 
           <ul className="hidden md:flex space-x-8">
-            {["Home", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
+            {["About Me", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
               (item) => (
                 <li key={item}>
                   <Link
-                    href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
+                    href={item === "About Me" ? "/" : `#${item.toLowerCase()}`}
                     className="text-white hover:text-gray-200 transition duration-300 font-medium"
                   >
                     {item}

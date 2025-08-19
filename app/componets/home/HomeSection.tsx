@@ -12,31 +12,16 @@ const HomeSection = () => {
         
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
-            <span className="block">I&apos;m Sylvia</span>
+            <span className="block">I&apos;m Sylvia Mwelu</span>
             <span className="block text-lg md:text-xl font-light mt-2">
               I am an Hr & Administration specialist. <br/>
-              Multi-skilled Virtual Assistant & Customer Relations Specialist. <br/>
-              I&apos;m passionate about streamlining Processes & Productivity.
+              Certified Virtual Assistant, dedicated to helping businesses and boost productivity.
             </span>
           </h1>
 
-          <div className="mt-6 text-sm opacity-90">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-white">🛠️</span>
-              <p className="font-semibold text-[#008080]">Tools & Apps I Use:</p>
-            </div>
-            
-            <p className="leading-relaxed">
-              Microsoft 365 • Google Analytics • Google Meet • Google Workspace 
-            </p>
-            <p className="leading-relaxed">
-              Airtable • Asana • Wixsite • Canva • Slack • Click-Up • Notion
-            </p>
-            <p className="leading-relaxed">
-              Convert Kit • Trello • Mailchimp • Online survey tools • Pika
-            </p>
-            <p className="leading-relaxed">
-              Gemini • Zoom • DALL-E • Pika • Canva • Calendly • Miro
+          <div className="flex flex-wrap gap-4">
+            <p>
+              I am a results-driven HR and Administrative Specialist with over 10 years of experience in executive support, virtual assistance, and program coordination.<br/>I have worked with NGO&apos;s, entrepreneurs, and businesses to streamline workflows, manage data, and support leadership, enabling them to operate efficiently and focus on growth and impact.
             </p>
           </div>
 
@@ -47,25 +32,17 @@ const HomeSection = () => {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg font-medium text-white transition duration-300"
             >
-              <span className="ml-2">📄</span> Documentation 
-            </Link>
-
-            <Link
-              href="https://beingsylvia.my.canva.site/onlineportfolio-sylviamwelu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg font-medium text-white transition duration-300"
-            >
-              🌐 Web Dev
+              <span className="ml-2">📄</span> View my resume
             </Link>
             
-          </div>
             <Link
               href="#contact"
               className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg font-medium text-[#008080] transition duration-300"
             >
               Get in Touch <span className="ml-2">→</span>
             </Link>
+          </div>
+            
         </div>
 
         <div className="relative flex justify-center">

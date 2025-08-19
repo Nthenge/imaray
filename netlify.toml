@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/contact"
+  to = "https://script.google.com/macros/s/AKfycbwaJj7ayAcec2w-FtYhSbwoM_DjXz1gOlvyadyt6Y9qaOPVzaTdxljzmhsQ-QRW9PhMvA/exec"
+  status = 200
+  force = true
