@@ -12,10 +12,9 @@ const HomeSection = () => {
         
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
-            <span className="block">I&apos;m Sylvia Mwelu</span>
+            <span className="block text-[#008080]">I&apos;m Sylvia Mwelu</span>
             <span className="block text-lg md:text-xl font-light mt-2">
-              I am an Hr & Administration specialist. <br/>
-              Certified Virtual Assistant, dedicated to helping businesses and boost productivity.
+              I am an Hr & Administration specialist. Certified Virtual Assistant, dedicated to helping businesses and boost productivity.
             </span>
           </h1>
 
