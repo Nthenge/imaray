@@ -10,6 +10,22 @@ const Navbar = ({
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
 }) => {
+  // custom scroll handler (instant jump)
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    id: string
+  ) => {
+    e.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: "auto", // instant jump
+      });
+    }
+    setIsOpen(false); // close mobile menu if open
+  };
+
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] backdrop-blur-md shadow-sm">
@@ -32,16 +48,24 @@ const Navbar = ({
 
           <ul className="hidden md:flex space-x-8">
             {["About Me", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
-              (item) => (
-                <li key={item}>
-                  <Link
-                    href={item === "About Me" ? "/" : `#${item.toLowerCase()}`}
-                    className="text-white hover:text-gray-200 transition duration-300 font-medium"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              )
+              (item) => {
+                const id = item === "About Me" ? "home" : item.toLowerCase();
+                return (
+                  <li key={item}>
+                    <a
+                      href={item === "About Me" ? "/" : `#${id}`}
+                      onClick={(e) =>
+                        item === "About Me"
+                          ? null
+                          : handleScroll(e, id)
+                      }
+                      className="text-white hover:text-gray-200 transition duration-300 font-medium"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                );
+              }
             )}
           </ul>
 
@@ -66,18 +90,25 @@ const Navbar = ({
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <ul className="flex flex-col items-start ml-10 mt-8 space-y-6">
-          {["Home", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
-            (item) => (
-              <li key={item}>
-                <Link
-                  href={item === "Home" ? "/" : `#${item.toLowerCase()}`}
-                  onClick={() => setIsOpen(false)}
-                  className="text-lg hover:text-gray-200 transition"
-                >
-                  {item}
-                </Link>
-              </li>
-            )
+          {["About Me", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
+            (item) => {
+              const id = item === "About Me" ? "About Me" : item.toLowerCase();
+              return (
+                <li key={item}>
+                  <a
+                    href={item === "About Me" ? "/" : `#${id}`}
+                    onClick={(e) =>
+                      item === "About Me"
+                        ? null
+                        : handleScroll(e, id)
+                    }
+                    className="text-lg hover:text-gray-200 transition"
+                  >
+                    {item}
+                  </a>
+                </li>
+              );
+            }
           )}
         </ul>
       </div>
