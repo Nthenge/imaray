@@ -19,8 +19,8 @@ const HomeSection = () => {
           </h1>
 
           <div className="flex flex-wrap gap-4">
-            <p>
-              I am a results-driven HR and Administrative Specialist with over 10 years of experience in executive support, virtual assistance, and program coordination.<br/>I have worked with NGO&apos;s, entrepreneurs, and businesses to streamline workflows, manage data, and support leadership, enabling them to operate efficiently and focus on growth and impact.
+            <p className="text-justify [text-align-last:left]">
+              I am a results-driven HR and Administrative Specialist with over 10 years of experience in executive support, virtual assistance, and program coordination. I have worked with NGO&apos;s, entrepreneurs, and businesses to streamline workflows, manage data, and support leadership, enabling them to operate efficiently and focus on growth and impact.
             </p>
           </div>
 
