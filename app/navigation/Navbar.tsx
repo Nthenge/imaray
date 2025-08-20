@@ -48,7 +48,7 @@ const Navbar = ({
           {/* Mobile Toggle with Rotation */}
           <button
             type="button"
-            className={`md:hidden text-white text-3xl transition-transform duration-300 ${
+            className={`md:hidden bg-[#008080] text-[#008080] text-3xl transition-transform duration-300 ${
               isOpen ? "rotate-90" : "rotate-0"
             }`}
             onClick={() => setIsOpen(!isOpen)}
