@@ -56,7 +56,7 @@ export default function ContactSection() {
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center overflow-hidden">
         
-        <div className="space-y-6 m-5">
+        <div className="space-y-6 m-3">
           <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
             Let&apos;s Connect
           </h1>
