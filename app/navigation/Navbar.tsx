@@ -65,7 +65,7 @@ const Navbar = ({
           transform transition-transform duration-300 z-40 pt-16 shadow-[4px_0_15px_rgba(0,0,0,0.3)]
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <ul className="flex flex-col items-center mt-8 space-y-6">
+        <ul className="flex flex-col items-start ml-10 mt-8 space-y-6">
           {["Home", "Services", "Work", "Testimonials", "FAQ", "Contact"].map(
             (item) => (
               <li key={item}>
