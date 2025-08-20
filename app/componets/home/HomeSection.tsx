@@ -13,7 +13,7 @@ const HomeSection = () => {
         <div className="space-y-6 leading-1.7">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
             <span className="block">I&apos;m Sylvia Mwelu</span>
-            <span className="block text-lg md:text-xl font-light mt-2 text-[#008080]">
+            <span className="block text-lg md:text-xl font-light mt-2 text-gray-900">
               I am an Hr & Administration specialist and Certified Virtual Assistant dedicated to helping businesses streamline processes and boost productivity.
             </span>
           </h1>
