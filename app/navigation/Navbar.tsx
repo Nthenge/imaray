@@ -25,7 +25,7 @@ const Navbar = ({
               height={40}
               className="rounded-full"
             />
-            <span className="text-lg font-bold text-white tracking-wide">
+            <span className="text-lg font-bold text-[#008080] tracking-wide">
               Sylvia
             </span>
           </Link>

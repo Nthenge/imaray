@@ -10,11 +10,11 @@ const HomeSection = () => {
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
         
-        <div className="space-y-6">
+        <div className="space-y-6 leading-1.7">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
-            <span className="block text-[#008080]">I&apos;m Sylvia Mwelu</span>
+            <span className="block">I&apos;m Sylvia Mwelu</span>
             <span className="block text-lg md:text-xl font-light mt-2">
-              I am an Hr & Administration specialist. Certified Virtual Assistant, dedicated to helping businesses and boost productivity.
+              I am an Hr & Administration specialist and Certified Virtual Assistant, dedicated to helping businesses and boost productivity.
             </span>
           </h1>
 
