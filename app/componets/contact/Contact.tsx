@@ -124,7 +124,7 @@ export default function ContactSection() {
               type="submit"
               className="w-full py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
             >
-              {status && "Submit 📩"}
+              {status || "Submit 📩"}
             </button>
           </form>
         </div>
