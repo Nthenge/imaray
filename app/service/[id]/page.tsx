@@ -2,13 +2,13 @@ import { services } from "../../componets/data/service";
 import Link from "next/link";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const id = parseInt(params.id, 10);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const id = parseInt((await params).id, 10);
   const service = services.find((p) => p.id === id);
 
   if (!service) {
@@ -22,11 +22,10 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 py-12">
       <div className="max-w-5xl mx-auto space-y-8">
-
         <h1 className="text-4xl font-bold text-[#008080]">{service.title}</h1>
         <p className="text-lg opacity-90">{service.text}</p>
 
-        {service.details && service.details.length > 0 && (
+        {service.details?.length > 0 && (
           <div className="mt-8">
             <h2 className="text-2xl font-semibold mb-4 text-[#008080]">
               Services Included:
@@ -40,6 +39,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </ul>
           </div>
         )}
+
         <Link
           href="/#services"
           className="inline-flex items-center px-4 py-2 bg-[#008080] text-white rounded-lg hover:bg-[#006666] transition-colors"
