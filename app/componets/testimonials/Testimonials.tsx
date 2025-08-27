@@ -49,7 +49,7 @@ export default function TestimonialsSection() {
             key={i}
             className="bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl p-6 flex flex-col justify-between hover:scale-[1.02] transition-transform duration-300"
           >
-            <p className="text-base leading-relaxed italic mb-4">
+            <p className="text-base leading-relaxed italic mb-4 line-clamp-3">
               “{t.text}”
             </p>
             <div className="text-[#008080] text-lg mb-3">⭐⭐⭐⭐⭐</div>
