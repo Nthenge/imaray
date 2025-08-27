@@ -2,24 +2,29 @@ export default function ServicesSection() {
   const services = [
     {
       icon: "📩",
-      title: "Virtual Assistance",
-      text: "Remote support for tasks including scheduling, email management, and customer service — helping clients stay productive.",
+      title: "Administrative Support",
+      text: "I help entrepreneurs, businesses, and NGOs stay organized by managing schedules, documents, and workflows—freeing up valuable time to focus on core priorities. I ensure smooth communication and collaboration by handling client follow-ups, professional correspondence, and stakeholder coordination that keeps teams aligned and productive",
     },
     {
       icon: "💻",
-      title: "NGO & Community Advocacy",
-      text: "As the founder of an NGO, I empower communities through advocacy, outreach, and sustainable initiatives.",
+      title: "Research and Reporting",
+      text: "I deliver clear, concise research and reporting that turns complex data into actionable insights—helping entrepreneurs, businesses, and NGOs make informed decisions with confidence",
     },
     {
       icon: "👥",
-      title: "Human Resource",
-      text: "Support with recruitment, onboarding, employee records, and HR functions for a smooth workplace.",
+      title: "Human Resource Support",
+      text: "I support organizations in managing their people through employee records, onboarding, recruitment assistance, and HR documentation that fosters compliance, engagement, and growth",
     },
     {
       icon: "📊",
-      title: "Project Management",
-      text: "Efficient planning, task coordination, and tracking to ensure projects are completed on time and within scope.",
+      title: "Project & Task Management",
+      text: "I provide structure and clarity to projects and data through organized tracking, accurate reporting, and workflow management that drive efficiency and informed decision-making",
     },
+    {
+      icon: "📊",
+      title: "Light Marketing & Social Support",
+      text: "I provide basic marketing and social media support—from scheduling posts to creating branded visuals and newsletters—so you can maintain a consistent online presence and engage your audience without the stress of daily content management.",
+    }
   ];
 
   return (
@@ -40,12 +45,9 @@ export default function ServicesSection() {
         <div className="flex flex-col md:flex-row gap-8">
 
           {/* Intro - right */}
-          <div className="flex-1 text-center md:text-left space-y-6">
+          <div className="flex-1 [text-align-last:left] md:text-left space-y-6">
             <p className="text-lg leading-relaxed">
-              My services range from virtual and administrative assistance to
-              creative and strategic support for individuals, entrepreneurs, and
-              businesses. I specialize in streamlining workflows, managing projects,
-              and handling day-to-day operations with precision and care.
+              With a Bachelor’s degree in Business Information Management and advanced training in Virtual Assistance and AI Career Essentials, I bring a unique balance of traditional office expertise and modern digital skills. Leveraging over a decade of professional experience, I deliver tailored support that streamlines operations, enhances customer experience, and helps businesses and organizations thrive in today’s digital landscape.
             </p>
           </div>
 
