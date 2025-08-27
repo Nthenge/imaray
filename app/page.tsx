@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Navbar from "@/app/navigation/Navbar";
 import HomeSection from "./componets/home/HomeSection";
-import ServicesSection from "./componets/services/Services";
+import ServicesSection from "./service/Services";
 import TestimonialsSection from "./componets/testimonials/Testimonials";
 import FaqSection from "./componets/faq/Faq";
 import ContactSection from "./componets/contact/Contact";
@@ -12,7 +12,7 @@ import WorkSection from "./work/worksectin";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
-  return (
+  return (  
     <div className="relative">
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
