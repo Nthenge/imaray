@@ -7,7 +7,7 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="min-h-screen py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
+      className="text-base min-h-screen py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">

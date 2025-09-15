@@ -52,7 +52,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="text-base md:text-xl min-h-screen flex items-center justify-center px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white overflow-hidden w-full"
+      className="text-base min-h-screen flex items-center justify-center px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white overflow-hidden w-full"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center overflow-hidden">
         

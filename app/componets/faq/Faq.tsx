@@ -29,7 +29,7 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className=" text-base md:text-xl min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
+      className=" text-base min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
     >
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
