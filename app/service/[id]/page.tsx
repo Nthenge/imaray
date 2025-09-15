@@ -20,7 +20,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="text-base md:text-xl lg:text-2xl min-h-screen bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 py-12">
+    <div className="text-base md:text-xl min-h-screen bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 py-12">
       <div className="max-w-5xl mx-auto space-y-8">
         <h1 className="text-4xl font-bold text-[#008080]">{service.title}</h1>
         <p className="text-lg opacity-90">{service.text}</p>
