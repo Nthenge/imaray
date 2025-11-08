@@ -6,14 +6,14 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="text-base min-h-screen flex items-center justify-center bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white px-6 md:px-12"
+      className="text-base min-h-screen flex items-center justify-center bg-gradient-to-br from-to-[#008080] to-[#748D92] to-[#008080] text-white px-6 md:px-12"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
         
         <div className="space-y-6 leading-1.7">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight pt-35 md:pt-0">
-            <span className="block">I&apos;m Sylvia Mwelu</span>
-            <span className="block text-lg md:text-xl font-light mt-2 text-gray-900 text-justify [text-align-last:left]">
+            <span className="block text-[#fff]">I&apos;m Sylvia Mwelu</span>
+            <span className="inline-block text-lg md:text-xl font-light mt-2 text-black text-justify [text-align-last:left]">
               I am an Hr & Administration specialist and Certified Virtual Assistant dedicated to helping businesses streamline processes and boost productivity.
             </span>
           </h1>
@@ -29,17 +29,26 @@ const HomeSection = () => {
               href="https://folll.io/Sylvia"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg font-medium text-white transition duration-300"
+              className="px-6 py-3 bg-[#CD7F32] hover:bg-[#CC5500] rounded-lg font-medium text-white transition duration-300"
             >
               <span className="ml-2">📄</span> View my resume
+            </Link>
+
+            <Link
+              href="https://folll.io/Sylvia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[#CD7F32] hover:bg-[#CC5500] rounded-lg font-medium text-white transition duration-300"
+            >
+              <span className="ml-2">📄</span> Certifications
             </Link>
             
             <Link
               href="#contact"
-              className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg font-medium text-[#008080] transition duration-300"
+              className="px-6 py-3 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-lg font-medium text-[#8B4000] transition duration-300"
             >
               Get in Touch <span className="ml-2">→</span>
-            </Link>
+            </Link>   
           </div>
             
         </div>

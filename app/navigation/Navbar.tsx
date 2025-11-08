@@ -28,12 +28,12 @@ const Navbar = ({
   return (
     <>
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] backdrop-blur-md shadow-sm">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-br from-[#748D92] to-[#008080] backdrop-blur-md shadow-sm">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2 px-3 py-1 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05),0_0_8px_#fff]"
+            className="flex items-center bg-[#CD7F32] hover:bg-[#CC5500] space-x-2 px-3 py-1 rounded-lg shadow-[6px_6px_12px_rgba(0,0,0,0.3),_-6px_-6px_12px_rgba(255,255,255,0.05),0_0_8px_#fff]"
           >
             <Image
               src="/images/sylvia.jpg"
@@ -42,7 +42,7 @@ const Navbar = ({
               height={40}
               className="rounded-full"
             />
-            <span className="text-lg font-bold text-[#008080] tracking-wide">Sylvia</span>
+            <span className="text-lg font-bold text-[#fff]  tracking-wide">Sylvia</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -66,7 +66,7 @@ const Navbar = ({
           {/* Mobile Toggle Button */}
           <button
             type="button"
-            className={`md:hidden text-[#008080] text-3xl transition-transform duration-300 ${
+            className={`md:hidden text-[#CD7F32] text-3xl transition-transform duration-300 ${
               isOpen ? "rotate-90" : "rotate-0"
             }`}
             onClick={() => setIsOpen(!isOpen)}
@@ -78,7 +78,7 @@ const Navbar = ({
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-2/3 bg-gradient-to-br from-[#748D92] to-[#D3D9D4]
+        className={`fixed top-0 left-0 h-full w-2/3 bg-gradient-to-br from-[#748D92] to-[#008080]
           transform transition-transform duration-300 z-40 pt-16 shadow-[4px_0_15px_rgba(0,0,0,0.3)]
           ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
@@ -90,7 +90,7 @@ const Navbar = ({
                 <a
                   href={item === "About Me" ? "/" : `#${id}`}
                   onClick={(e) => item === "About Me" ? null : handleScroll(e, id)}
-                  className="text-[#008080] text-base font-medium hover:text-gray-200 transition"
+                  className="text-[#fff] text-base font-medium hover:text-gray-200 transition"
                 >
                   {item}
                 </a>

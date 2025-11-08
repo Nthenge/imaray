@@ -52,7 +52,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="text-base min-h-screen flex items-center justify-center px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white overflow-hidden w-full"
+      className="text-base min-h-screen flex items-center justify-center px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#008080] text-white overflow-hidden w-full"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center overflow-hidden">
         
@@ -60,15 +60,15 @@ export default function ContactSection() {
           <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
             Let&apos;s Connect
           </h1>
-          <div className="w-20 h-1 bg-[#008080] rounded-full"></div>
-          <p className="opacity-90 leading-relaxed">
+          <div className="w-20 h-1 bg-[#CC5500] rounded-full"></div>
+          <p className="opacity-90 leading-relaxed text-black">
             I&apos;d love to hear about your goals, ideas, or vision — let’s turn
             great conversations into meaningful results.
           </p>
 
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg space-y-4">
             <h4 className="text-xl font-semibold">Excellence You Can Rely On</h4>
-            <p className="opacity-85">
+            <p className="opacity-85 text-black">
               Have a goal? I have the tools and experience to help you reach it.
               Let&apos;s connect and turn your ideas into impact.
             </p>
@@ -76,14 +76,14 @@ export default function ContactSection() {
             <ul className="list-disc list-inside space-y-1 text-sm opacity-90">
               <li>We&apos;ll prepare the proposal.</li>
               <li>We&apos;ll discuss it together.</li>
-              <li>Let&apos;s start the discussion.</li>
+              <p className="text-black"><strong>Let&apos;s start the discussion!</strong></p>
             </ul>
           </div>
         </div>
 
         <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg p-8" >
-          <h6 className="mb-6 text-lg font-medium text-[#008080]">
-            Be as detailed as you can
+          <h6 className="mb-6 text-lg font-medium text-[black]">
+            Kindly be as detailed as you can.
           </h6>
           <form onSubmit={handleSubmit} className="space-y-4 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
@@ -93,7 +93,7 @@ export default function ContactSection() {
                 placeholder="First Name"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#CC5500] transition"
               />
               <input
                 type="text"
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+                className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#CC5500] transition"
               />
             </div>
             <input
@@ -110,7 +110,7 @@ export default function ContactSection() {
               placeholder="Email address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#EFA48B] transition"
+              className="w-full px-2 py-3 bg-transparent border-b-2 border-white/30 text-white placeholder-gray-300 focus:outline-none focus:border-[#CC5500] transition"
             />
             <textarea
               name="message"
@@ -118,11 +118,11 @@ export default function ContactSection() {
               rows={6}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/20 placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-[#EFA48B] transition"
+              className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/20 placeholder-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-[#CC5500] transition"
             ></textarea>
             <button
               type="submit"
-              className="w-full py-3 bg-[#008080] hover:bg-[#124E66] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
+              className="w-full py-3 bg-[#CD7F32] hover:bg-[#CC5500] rounded-lg text-white font-medium shadow-lg transition-transform transform hover:scale-[1.02] resize-none"
             >
               {status || "Submit 📩"}
             </button>

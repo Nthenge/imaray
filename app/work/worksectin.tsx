@@ -7,14 +7,14 @@ export default function WorkSection() {
   return (
     <section
       id="work"
-      className="text-base min-h-screen py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
+      className="text-base min-h-screen py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#008080] text-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#008080]">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-[#fff]">
             My Work
           </h1>
-          <div className="w-20 h-1 bg-[#008080] mx-auto mt-3 rounded-full"></div>
+          <div className="w-20 h-1 bg-[#CC5500] mx-auto mt-3 rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -32,7 +32,7 @@ export default function WorkSection() {
                 height={300}
                 className="rounded-lg shadow-md mb-4 object-cover h-60 w-full max-w-full"
               />
-              <h3 className="text-2xl font-semibold text-[#008080] mb-3 group-hover:text-[#124E66] transition">
+              <h3 className="text-2xl font-semibold text-[black] mb-3 group-hover:text-[#124E66] transition">
                 {project.title}
               </h3>
               <p className="text-sm opacity-90">{project.descriptions}</p>

@@ -2,14 +2,14 @@ export default function FooterSection() {
   return (
     <footer
       id="footer"
-      className="w-full min-h-screen flex flex-col justify-between bg-gradient-to-br from-[#748D92] to-[#008080] text-white py-12 px-6"
+      className="w-full min-h-screen flex flex-col justify-between bg-gradient-to-br from-to-[#008080] to-[#748D92] to-[#008080] text-white py-12 px-6"
     >
       <div className="flex-grow flex flex-col justify-center">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
           <div>
-            <h5 className="text-3xl font-bold text-[#008080]">Sylvia</h5>
-            <div className="w-16 h-1 bg-[#008080] rounded-full my-3"></div>
-            <p className="text-sm opacity-90 leading-relaxed">
+            <h5 className="text-3xl font-bold text-[black]">Sylvia</h5>
+            <div className="w-16 h-1 bg-[#CC5500] rounded-full my-3"></div>
+            <p className="opacity-90 leading-relaxed text-m">
               Versatile Virtual Assistant with 10+ years in admin, HR support,
               recruitment, scheduling, customer service, and digital content.
               Proficient in Google Workspace, Canva, and social media. Delivers
@@ -19,8 +19,8 @@ export default function FooterSection() {
           </div>
 
           <div>
-            <h5 className="text-2xl font-semibold text-[#008080]">Services</h5>
-            <div className="w-12 h-1 bg-[#008080] rounded-full my-3"></div>
+            <h5 className="text-2xl font-semibold text-[black]">Services</h5>
+            <div className="w-12 h-1 bg-[#CC5500] rounded-full my-3"></div>
             <ul className="space-y-3">
               <li>
                 <a href="#services" className="hover:text-white hover:underline transition">
@@ -47,12 +47,12 @@ export default function FooterSection() {
 
           {/* Useful Links */}
           <div>
-            <h5 className="text-2xl font-semibold text-[#008080]">Useful Links</h5>
-            <div className="w-12 h-1 bg-[#008080] rounded-full my-3"></div>
+            <h5 className="text-2xl font-semibold text-[black]">Useful Links</h5>
+            <div className="w-12 h-1 bg-[#CC5500] rounded-full my-3"></div>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/sylvia-mutinda"
+                  href="http://www.linkedin.com/in/sylvia-m-mutinda"
                   target="_blank"
                   className="hover:text-white hover:underline transition"
                 >

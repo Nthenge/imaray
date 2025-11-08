@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "joyce",
-    title: "🧩 Simple ways for busy proffesionals to stay Orgenized at home",
+    title: "🧩 Simple ways for busy proffesionals to stay Organized at home",
     descriptions: `
       The client needed a well-researched guide on how to stay organized at home while managing a demanding professional schedule. The goal was to provide practical, sustainable tips and practices that could help them create better work-life balance, improve focus, and reduce stress.
     `,

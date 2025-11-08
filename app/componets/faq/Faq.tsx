@@ -29,15 +29,15 @@ export default function FaqSection() {
   return (
     <section
       id="faq"
-      className=" text-base min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#D3D9D4] text-white"
+      className=" text-base min-h-screen flex flex-col justify-center py-20 px-6 md:px-12 bg-gradient-to-br from-[#748D92] to-[#008080] text-white"
     >
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
           FAQ
         </h1>
-        <div className="w-20 h-1 bg-[#008080] mx-auto mt-4 rounded-full"></div>
-        <p className="mt-4 text-lg opacity-90">
-          Frequently asked questions, get knowledge beforehand
+        <div className="w-20 h-1 bg-[#CC5500] mx-auto mt-4 rounded-full"></div>
+        <p className="mt-4 text-lg opacity-90 text-black">
+          Frequently asked questions, get knowledge beforehand!
         </p>
       </div>
 
