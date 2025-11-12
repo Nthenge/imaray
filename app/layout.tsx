@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sylvia",
+  title: "Imaray",
   description: "Official Sylvia Site",
+  verification: {
+    google: "iYIvCqp_zF9bPbalkPBy3NkT4KbuiBdfqfC38SZZtG4", 
+  },
 };
 
 export default function RootLayout({
